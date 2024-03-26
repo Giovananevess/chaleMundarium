@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
+import Swiper from 'swiper';
 
 @Component({
   selector: 'app-details-chale',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./details-chale.component.css']
 })
 export class DetailsChaleComponent {
+
+  constructor() { }
+
 
 }

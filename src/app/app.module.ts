@@ -10,6 +10,10 @@ import { DetailsChaleComponent } from './pages/details-chale/details-chale.compo
 import { CoffeeComponent } from './pages/coffee/coffee.component';
 import { NavbarComponent } from './pages/navbar/navbar.component';
 import { CardComponent } from './pages/card/card.component';
+// import function to register Swiper custom elements
+import { register } from 'swiper/element/bundle';
+// register Swiper custom elements
+register();
 
 @NgModule({
   declarations: [
