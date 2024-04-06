@@ -1,7 +1,6 @@
-<div class="container-chale">
+<!-- <div class="container-chale">
 
   <div class="card-img-container">
-    <!-- <img src="../../../assets/logo/logo-capa.png" alt="" class="card-img"> -->
     <div class="carousel">
       <div class="slides">
         <img *ngFor="let image of images; let i = index" src="../../../assets/capa_carousel/1_fuji.jpeg"
@@ -22,7 +21,22 @@
   </div>
   <div class="text-overlay">
     <div class="text__container">{{ slideTexts[currentSlide] }}</div>
-    <!-- <p class="text__container">"Viva uma experiência <br> única em um lugar incrível <br> perto da natureza"</p> -->
     <a href="https://api.whatsapp.com/send?phone=SEUNUMERO" target="_blank" class="button">Faça sua reserva agora</a>
   </div>
-</div>
+</div> -->
+
+<body>
+  <swiper-container class="mySwiper" effect="cards" grab-cursor="true">
+    <swiper-slide><img src="../../../assets/carousel_exp/_MG_6278.jpg" alt=""></swiper-slide>
+    <swiper-slide><img src="../../../assets/carousel_exp/_MG_6278.jpg" alt=""></swiper-slide>
+    <swiper-slide><img src="../../../assets/carousel_exp/_MG_6278.jpg" alt=""></swiper-slide>
+    <swiper-slide><img src="../../../assets/carousel_exp/_MG_6278.jpg" alt=""></swiper-slide>
+    <swiper-slide><img src="../../../assets/carousel_exp/_MG_6278.jpg" alt=""></swiper-slide>
+    <swiper-slide>Slide 6</swiper-slide>
+    <swiper-slide>Slide 7</swiper-slide>
+    <swiper-slide>Slide 8</swiper-slide>
+    <swiper-slide>Slide 9</swiper-slide>
+  </swiper-container>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+</body>

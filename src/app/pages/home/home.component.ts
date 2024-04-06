@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+
+declare var google: any; // Adicione esta linha
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,6 +9,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   currentIndex = 0;
+
+
+  constructor() { }
+
+  ngOnInit(): void {
+    this.startCarousel();
+    this.initMap();
+  }
+  initMap(): void {
+    const myLatLng = { lat: -22.795978, lng: -45.7541044 }; // Localização em São Paulo
+    const mapElement = document.getElementById('map');
+    if (mapElement) {
+      const map = new google.maps.Map(mapElement, {
+        zoom: 15,
+        center: myLatLng
+      });
+      const marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Localização'
+      });
+    } else {
+      console.error('Elemento do mapa não encontrado');
+    }
+  }
+
 
   images = [
     '../../../assets/capa_carousel/1_fuji.jpeg',
@@ -24,10 +52,6 @@ export class HomeComponent implements OnInit {
 
 
   currentSlide: number = 0;
-
-  ngOnInit(): void {
-    this.startCarousel();
-  }
 
   startCarousel(): void {
     setInterval(() => {
