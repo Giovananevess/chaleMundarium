@@ -49,15 +49,15 @@ export class DetailsChaleComponent {
     '../../../assets/details/IMG_2731.jpg',
     '../../../assets/details/IMG_2732.jpg',
     '../../../assets/details/IMG_2733.jpg',
-    '../../../assets/details/IMG_2735.jpg',
-    '../../../assets/details/IMG_2808_jpg.jpg',
-    '../../../assets/details/_MG_6308.jpg',
     '../../../assets/details/_MG_6369.jpg',
-    '../../../assets/details/_MG_6406.jpg',
+    '../../../assets/details/IMG_2808_jpg.JPG',
+    '../../../assets/details/IMG_2735.jpg',
+    '../../../assets/details/_MG_6502.jpg',
+    '../../../assets/details/_MG_6412.jpeg',
     '../../../assets/details/_MG_6450.jpg',
     '../../../assets/details/IMG_2733.jpg',
     '../../../assets/details/_MG_6491.jpg',
-    '../../../assets/details/IMG_2817.jpg',
+    '../../../assets/details/img1.jpg',
 
     // Adicione mais URLs de imagens conforme necessário
   ];

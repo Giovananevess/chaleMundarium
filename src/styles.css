@@ -25,6 +25,11 @@
 
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
@@ -248,7 +253,7 @@ section {
 section.hero {
      width: 100%;
   height: auto;
-  background: var(--brand-02)   ;
+  background: #e2e1e1   ;
   /* url('https://ouch-cdn2.icons8.com/hxxz5Qr551KY1597yq-mz9zWRTkAT-cob5eZ8UreBBo/rs:fit:368:338/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNzcy/L2UxYjU4YWUwLTc3/YjQtNGQ1OC05NjJl/LWUzODQ1Y2IyYzBi/Ny5wbmc.png') no-repeat center right */
   flex-direction: column;
   justify-content: center;
@@ -390,12 +395,12 @@ section h2 {
 }
 
 
-/*
+
 .btn-group {
   display: flex;
   flex-direction: row;
   grid-gap: 16px;
-} */
+}
 
 
 footer ul li a {

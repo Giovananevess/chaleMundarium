@@ -27,7 +27,7 @@ register();
     CoffeeComponent,
     NavbarComponent,
     CardComponent,
-    FeedbackComponent
+    FeedbackComponent,
   ],
   imports: [
     BrowserModule,
