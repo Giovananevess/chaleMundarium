@@ -16,14 +16,6 @@ img {
 ul {
   list-style-type: none;
 
-  i {
-    color: #fff;
-    font-size: clamp(0.9rem, 0.825rem + 0.3vw, 1.2rem);
-
-    &:hover {
-      color: #6f78aa;
-    }
-  }
 }
 
 
