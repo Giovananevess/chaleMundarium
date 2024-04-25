@@ -17,6 +17,7 @@
     "@angular/google-maps": "^15.2.9",
     "@angular/platform-browser-dynamic": "^15.2.0",
     "@angular/router": "^15.2.0",
+    "bootstrap": "^5.3.3",
     "masonry-layout": "^4.2.2",
     "rxjs": "~7.8.0",
     "swiper": "^11.0.7",
