@@ -1,4 +1,4 @@
-
+@import '~bootstrap/dist/css/bootstrap.min.css';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200&family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
@@ -55,6 +55,7 @@ overflow-x: hidden;
 
 
 
+
 .card-large,
 .card-med {
   /*    border: 1px solid orange;*/
@@ -75,27 +76,19 @@ overflow-x: hidden;
   border-radius: 12px;
   overflow: hidden;
   width: 40%;
-  /*    padding-bottom: 32px;*/
+  /* padding-bottom: 32px; */ /* Você pode remover essa linha se não for necessário */
+  position: relative;
 }
-
-
 
 .card-large:hover {
   box-shadow: var(--card-hover);
   transform: scale(1.01);
 }
 
-.card-med:hover .card-image {
-  transform: scale(1.01);
-}
-
-
 .card-image {
   width: 100%;
-  /*    height: 90%;*/
-
+  height: 100%; /* Alterado para 100% */
   position: relative;
-  border-radius: 12px;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -103,18 +96,17 @@ overflow-x: hidden;
   transition: var(--hover-timing);
 }
 
+
 .card-large > .card-image {
-  aspect-ratio: 1/1;
+  aspect-ratio: 1/2;
 }
 
 .card-image > img {
   width: 100%;
   height: 100%;
-  position: absolute;
-  object-fit: contain;
-
-
-
+  object-fit: cover;
+  object-position: center; /* Adicionado para centralizar a imagem */
+  border-radius: 12px; /* Adicionado para arredondar os cantos da imagem */
 }
 
 
@@ -127,58 +119,17 @@ overflow-x: hidden;
   line-height: 1.2;
 }
 
-
-
-
 .card-large > ul {
   /*    padding: 16px 0 24px;*/
   display: flex;
   flex-direction: column;
   grid-gap: 8px;
   flex: 1;
-  /*    border: 1px solid blue;*/
-
-  color: var(--text-01);
-
-  padding: 0 40px 40px;
+  padding: 0  0px 0px;
   font-size: 28px;
   font-weight: 600;
   line-height: 1.5;
 }
-
-
-
-
-
-.card-large#sup-dog,
-.card-med#sup-dog > .card-image {
-  background: linear-gradient(45deg, #463631 0%, #af6b53 100%);
-}
-
-
-button.btn-outline {
-  color: var(--light-01);
-  border-color: var(--light-01);
-}
-
-
-.card-large#sup-fish,
-.card-med#sup-fish > .card-image {
-  background: linear-gradient(45deg, #492e2e 0%, #ca1313 100%);
-}
-
-
-.card-large.card-dark a,
-.card-large.card-dark > ul {
-  color: var(--text-01);
-}
-
-.card-large.card-light a,
-.card-large.card-light > ul {
-  color: var(--light-01);
-}
-
-
 
 button {
   font-size: 14px;
@@ -430,7 +381,7 @@ section.hero h1 {
 }
 
 #serv-groom > .card-image {
-  background: linear-gradient(45deg, #45828C 0%, #A7D4D8 100%);
+  background: linear-gradient(45deg, #cbcdce 0%, #ececec 100%);
 }
 
 #serv-board > .card-image {
@@ -473,13 +424,13 @@ section h2 {
 }
 
 .card-wide .card-image {
-  width: 80%;
+  width: 100%;
   border-radius: 0;
 }
 
 .card-image img {
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
 }
 
 .card-wide > ul {
@@ -487,7 +438,7 @@ section h2 {
 }
 
 .card-wide .subtitle {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.4;
   font-weight: 500;
   /*    margin-top: 8px;*/
@@ -495,11 +446,11 @@ section h2 {
 }
 
 .card-wide > ul > li span {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .card-large > ul > li:last-of-type {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 

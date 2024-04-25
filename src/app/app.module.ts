@@ -11,6 +11,7 @@ import { NavbarComponent } from './pages/navbar/navbar.component';
 import { CardComponent } from './pages/card/card.component';
 import { register } from 'swiper/element/bundle';
 import { FeedbackComponent } from './pages/feedback/feedback.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
 register();
 
 @NgModule({
@@ -24,6 +25,7 @@ register();
     NavbarComponent,
     CardComponent,
     FeedbackComponent,
+    AboutUsComponent,
   ],
   imports: [
     BrowserModule,

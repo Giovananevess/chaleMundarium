@@ -215,7 +215,12 @@ button.btn-filled-dark {
   color: var(--text-01);
 }
 
-
+a {
+  text-decoration: none;
+}
+.no-underline {
+  text-decoration: none;
+}
 button:hover,
 .btn-outline-dark.btn-hover-color:hover {
   color: var(--light-01);
