@@ -124,8 +124,6 @@ section {
   text-align: center;
   width: calc(min(90rem, 90%));
   margin-inline: auto;
-
-  span,
   p,
   h2,
   h3 {
