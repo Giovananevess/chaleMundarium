@@ -124,11 +124,6 @@ section {
   text-align: center;
   width: calc(min(90rem, 90%));
   margin-inline: auto;
-  p,
-  h2,
-  h3 {
-    letter-spacing: 0.035rem;
-  }
 
   p {
     line-height: 1.6;
