@@ -38,6 +38,19 @@ section {
   padding: 20px 15px 20px;
 }
 
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white; /* Cor do texto */
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.9); /* Cor de fundo do texto com transparência */
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
 .card-content > p {
   margin-bottom: 10px;
 }
@@ -61,8 +74,39 @@ section {
   }
 }
 
-@media (max-width: 500px) {
+
+@media (max-width: 600px) {
   section {
-     grid-template-columns: repeat(1, 1fr);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .card {
+    width: calc(100% - 40px); /* Reduz a largura do card */
+    max-width: none; /* Remove a largura máxima definida anteriormente */
+    aspect-ratio: 1; /* Define uma proporção quadrada para o card */
+  }
+
+  .card > img {
+    border-radius: 16px; /* Adiciona borda arredondada ao card */
+  }
+
+  .card-content {
+    padding: 10px 15px; /* Reduz o padding do conteúdo do card */
+  }
+
+  .overlay-text {
+    font-size: 16px; /* Reduz o tamanho da fonte do texto sobreposto */
+    padding: 8px 12px; /* Reduz o padding do texto sobreposto */
+    border-radius: 4px; /* Adiciona borda arredondada ao texto sobreposto */
+  }
+}
+
+/* Estilos para telas maiores */
+@media (min-width: 601px) {
+  section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 }

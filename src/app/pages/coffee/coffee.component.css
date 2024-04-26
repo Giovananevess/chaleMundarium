@@ -1,6 +1,4 @@
 
-/* -------------- */
-/* DEFAULT VALUES */
 
 *,
 *::before,
@@ -79,27 +77,12 @@ body {
   background: #585858;
 }
 
-.explore,
-.explore:before,
 .close-btn,
 .close-btn:before {
   background: rgb(23, 40, 49);
   background: linear-gradient(
     45deg,
-    rgb(46, 44, 37) 0%,
-    rgb(61, 105, 131) 100%
-  );
-}
-
-
-
-
-.close-btn,
-.close-btn:before {
-  background: rgb(23, 40, 49);
-  background: linear-gradient(
-    45deg,
-    rgb(46, 44, 37) 0%,
+    rgb(44, 43, 39) 0%,
     rgb(61, 105, 131) 100%
   );
   background: -moz-linear-gradient(
@@ -112,28 +95,6 @@ body {
     rgb(46, 44, 37) 0%,
     rgb(61, 105, 131) 100%
   );
-}
-
-.button {
-  display: inline-block;
-  position: relative;
-  border-radius: 16px; /* Adiciona bordas arredondadas */
-  text-decoration: none;
-  padding: 0.8rem 2rem;
-  font-size: 1rem;
-  font-weight: bold;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  transition: all 0.5s ease;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-
-.button:hover {
-  text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.8);
 }
 
 .button:hover::after {
