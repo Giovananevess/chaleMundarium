@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { DeviceDetectorService } from 'ngx-device-detector';
 
 
 @Component({
@@ -9,16 +8,9 @@ import { DeviceDetectorService } from 'ngx-device-detector';
 })
 
 
-export class OptionTravelComponent implements OnInit {
+export class OptionTravelComponent {
 
-  cards: any[] = [];
-  isMobile: boolean | undefined;
 
-  constructor(private deviceService: DeviceDetectorService) { }
-
-  ngOnInit(): void {
-    this.isMobile = this.deviceService.isMobile();
-  }
 
 
 }
