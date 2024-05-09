@@ -203,9 +203,10 @@ button:hover,
     width: 609px;
     height: 420px;
     display: block;
+    object-fit: cover;
     margin: 0 auto;
     position: relative;
-    left: 50px; /* move o slider para a direita */
+    left: 200px; /* move o slider para a direita */
     top: -20px; /* sobe o slider */
     border-radius: 16px !important;
 }
