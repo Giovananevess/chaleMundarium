@@ -515,11 +515,14 @@ footer ul li {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   :root {
       --pg-margin: 16px;
   }
 
+  .slides {
+   display: none;
+  }
   section.hero {
       aspect-ratio: 1/1;
       padding-top: 64px;
@@ -531,6 +534,7 @@ footer ul li {
       --hero-text: 40px;
       width: 80%;
   }
+
 
   section.hero {
       background-size: 85%;
@@ -568,6 +572,8 @@ footer ul li {
 
   .btn-group {
       flex-direction: column;
+      align-items: center;
+      align-content: center;
   }
   .section.hero .content .btn-group,
   .section.hero .content .slides {

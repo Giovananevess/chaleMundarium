@@ -12,6 +12,7 @@ import { CardComponent } from './pages/card/card.component';
 import { register } from 'swiper/element/bundle';
 import { FeedbackComponent } from './pages/feedback/feedback.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { HeaderComponent } from './pages/header/header.component';
 register();
 
 @NgModule({
@@ -26,6 +27,7 @@ register();
     CardComponent,
     FeedbackComponent,
     AboutUsComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,

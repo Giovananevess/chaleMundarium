@@ -1,10 +1,4 @@
-/* passeios */
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
+
 
 h1 {
   font-size: 2.5rem;
@@ -202,28 +196,31 @@ h1 {
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 750px) {
   .cols {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Mostrar dois cards por linha */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr); /* Mostrar um card por linha */
     gap: 20px; /* Espaçamento entre os cards */
   }
 
   .col {
-    width: calc(50% - 20px); /* Ajustar a largura dos cards para 50% da largura da tela, com espaço de 20px entre eles */
+    width: 80%; /* Ajustar a largura dos cards para 100% da largura da tela */
+    margin-top: 20px; /* Adicionar espaço abaixo de cada card */
   }
-
   .card {
-    height: 200px; /* Reduzir a altura dos cards */
+    height: 150px; /* Reduzir a altura dos cards */
+    max-height: 180px;
   }
-
   .card .inner {
     padding: 20px; /* Adicionar espaçamento interno aos cards */
   }
-
   .card .inner p,
   .card .inner span {
     font-size: 14px; /* Reduzir o tamanho do texto */
   }
+
 }
 
