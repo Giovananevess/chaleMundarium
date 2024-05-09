@@ -1,1 +1,76 @@
+.page-wrapper {
+  max-width: 860px;
+  padding: 40px;
+  margin: 0 auto;
+}
 
+.card-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  clear: both; /* Adicionado para evitar sobreposição */
+
+}
+
+.expandable-card {
+  flex: 0 1 calc(33.33% - 150spx); /* 3 cartões por linha com margem de 16px entre eles */
+  margin-bottom: 16px;
+  margin-right: 0;
+}
+
+
+.card-column {
+  flex: 0 1 48%;
+}
+
+.expandable-card {
+  margin-bottom: 16px;
+  width: 100%;
+  height: 250px;
+  padding: 16px;
+  box-sizing: border-box;
+  position: relative;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.expandable-card--profile-image {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(128, 10, 128, 0.267);
+  color: black;
+  font-size: 21px;
+  font-weight: bold;
+  border-radius: 1000px;
+  margin-right: 16px;
+}
+
+.expandable-card--title {
+  font-size: 21px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.expandable-card--sub-title {
+  font-size: 14px;
+  color: #888888;
+}
+
+
+@media screen and (max-width: 768px) {
+  .card-group {
+    flex-direction: column; /* Empilhar os cartões em coluna */
+
+  }
+
+  .card-group .expandable-card {
+    flex: 0 1 100%; /* Ocupar toda a largura */
+    width: 100%;
+    height: 320px;
+  }
+}

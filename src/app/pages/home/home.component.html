@@ -27,147 +27,264 @@
         <li><i class='bx bxs-leaf'></i>Lugar tranquilo</li>
       </ul>
     </div>
-    <!-- <div id="carouselExampleControls" class="carousel carousel-have" data-ride="carousel">
-      <div class="carousel-inner" style="">
-        <ol class=" carousel-indicators">
-          <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-1z" data-slide-to="1"></li>
-          <li data-target="#carousel-example-1z" data-slide-to="2"></li>
-        </ol>
-        <div *ngFor="let image of images; let i = index" [class.active]="i === currentIndex" class="carousel-item">
-          <img [src]="image" alt="Slide {{ i }}">
+
+    <ul class="slides">
+      <input type="radio" name="radio-btn" id="img-1" checked />
+      <li class="slide-container">
+        <div class="slide">
+          <img src="../../../assets/carousel_exp/_MG_6278.jpg" />
         </div>
-        <div *ngFor="let image of images; let i = index" [class.active]="i === currentIndex" class="carousel-item">
-          <img [src]="image" alt="Slide {{ i }}">
+        <div class="nav">
+          <label for="img-6" class="prev">&#x2039;</label>
+          <label for="img-2" class="next">&#x203a;</label>
         </div>
-        <div *ngFor="let image of images; let i = index" [class.active]="i === currentIndex" class="carousel-item">
-          <img [src]="image" alt="Slide {{ i }}">
+      </li>
+
+      <input type="radio" name="radio-btn" id="img-2" />
+      <li class="slide-container">
+        <div class="slide">
+          <img src="../../../assets/carousel_exp/IMG_1523.JPEG" />
         </div>
-      </div>
-      <a class="carousel-control-prev" (click)="prevImage()">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      </a>
-      <a class="carousel-control-next" (click)="nextImage()">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      </a>
-    </div> -->
-    <div style="border-radius: 16px;">
-      <ul class="slides">
-        <input type="radio" name="radio-btn" id="img-1" checked />
-        <li class="slide-container">
-          <div class="slide">
-            <img src="../../../assets/carousel_exp/_MG_6294.jpg" />
-          </div>
-          <div class="nav">
-            <label for="img-6" class="prev">&#x2039;</label>
-            <label for="img-2" class="next">&#x203a;</label>
-          </div>
-        </li>
+        <div class="nav">
+          <label for="img-1" class="prev">&#x2039;</label>
+          <label for="img-3" class="next">&#x203a;</label>
+        </div>
+      </li>
 
-        <input type="radio" name="radio-btn" id="img-2" />
-        <li class="slide-container">
-          <div class="slide">
-            <img src="../../../assets/carousel_exp/_MG_6278.jpg" />
-          </div>
-          <div class="nav">
-            <label for="img-1" class="prev">&#x2039;</label>
-            <label for="img-3" class="next">&#x203a;</label>
-          </div>
-        </li>
+      <input type="radio" name="radio-btn" id="img-3" />
+      <li class="slide-container">
+        <div class="slide">
+          <img src="../../../assets/carousel_exp/IMG_2822.JPEG" />
+        </div>
+        <div class="nav">
+          <label for="img-2" class="prev">&#x2039;</label>
+          <label for="img-4" class="next">&#x203a;</label>
+        </div>
+      </li>
 
-        <input type="radio" name="radio-btn" id="img-3" />
-        <li class="slide-container">
-          <div class="slide">
-            <img src="../../../assets/carousel_exp/_MG_6282.jpg" />
-          </div>
-          <div class="nav">
-            <label for="img-2" class="prev">&#x2039;</label>
-            <label for="img-4" class="next">&#x203a;</label>
-          </div>
-        </li>
+      <input type="radio" name="radio-btn" id="img-4" />
+      <li class="slide-container">
+        <div class="slide">
+          <img src="../../../assets/carousel_exp/IMG_1337.JPEG" />
+        </div>
+        <div class="nav">
+          <label for="img-3" class="prev">&#x2039;</label>
+          <label for="img-5" class="next">&#x203a;</label>
+        </div>
+      </li>
 
-        <input type="radio" name="radio-btn" id="img-4" />
-        <li class="slide-container">
-          <div class="slide">
-            <img src="../../../assets/carousel_exp/_MG_6332.jpg" />
-          </div>
-          <div class="nav">
-            <label for="img-3" class="prev">&#x2039;</label>
-            <label for="img-5" class="next">&#x203a;</label>
-          </div>
-        </li>
+      <input type="radio" name="radio-btn" id="img-5" />
+      <li class="slide-container">
+        <div class="slide">
+          <img src="../../../assets/carousel_exp/04EFF359-A473-4C5E-B96E-91CF3FF078BA.JPEG" />
+        </div>
+        <div class="nav">
+          <label for="img-4" class="prev">&#x2039;</label>
+          <label for="img-6" class="next">&#x203a;</label>
+        </div>
+      </li>
 
-        <input type="radio" name="radio-btn" id="img-5" />
-        <li class="slide-container">
-          <div class="slide">
-            <img src="../../../assets/carousel_exp/_MG_6366.jpg" />
-          </div>
-          <div class="nav">
-            <label for="img-4" class="prev">&#x2039;</label>
-            <label for="img-6" class="next">&#x203a;</label>
-          </div>
-        </li>
+      <input type="radio" name="radio-btn" id="img-6" />
+      <li class="slide-container">
+        <div class="slide">
+          <img src="../../../assets/carousel_exp/IMG_3504.JPEG" />
+        </div>
+        <div class="nav">
+          <label for="img-5" class="prev">&#x2039;</label>
+          <label for="img-1" class="next">&#x203a;</label>
+        </div>
 
-        <input type="radio" name="radio-btn" id="img-6" />
-        <li class="slide-container">
-          <div class="slide">
-            <img src="../../../assets/carousel_exp/_MG_6442.jpg" />
-          </div>
-          <div class="nav">
-            <label for="img-5" class="prev">&#x2039;</label>
-            <label for="img-1" class="next">&#x203a;</label>
-          </div>
-        </li>
+        <input type="radio" name="radio-btn" id="img-7" />
+      <li class="slide-container">
+        <div class="slide">
+          <img src="../../../assets/carousel_exp/D3EEB8DD-111E-44DF-91AD-228290208A28.JPEG" />
+        </div>
+        <div class="nav">
+          <label for="img-5" class="prev">&#x2039;</label>
+          <label for="img-1" class="next">&#x203a;</label>
+        </div>
+      </li>
 
-        <li class="nav-dots">
-          <label for="img-1" class="nav-dot" id="img-dot-1"></label>
-          <label for="img-2" class="nav-dot" id="img-dot-2"></label>
-          <label for="img-3" class="nav-dot" id="img-dot-3"></label>
-          <label for="img-4" class="nav-dot" id="img-dot-4"></label>
-          <label for="img-5" class="nav-dot" id="img-dot-5"></label>
-          <label for="img-6" class="nav-dot" id="img-dot-6"></label>
-        </li>
-      </ul>
-    </div>
+      <li class="nav-dots">
+        <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+        <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+        <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+        <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+        <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+        <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+        <label for="img-7" class="nav-dot" id="img-dot-7"></label>
+      </li>
+    </ul>
   </div>
+
+
 </section>
 
 <app-feedback></app-feedback>
 
 <section>
   <h2>Feedback dos nossos hóspedes</h2>
-  <ul class="services">
-    <li class="card-large card-dark card-wide" id="serv-groom">
-      <div class="card-image"><img src="../../../assets/feedback1.png">
+  <div class="page-wrapper">
+    <div class="card-group">
+      <div class="card-column">
+        <div id="profile-1" class="expandable-card">
+          <div cardContent>
+            <div collapsedContent>
+              <div class="expandable-card--left-col col">
+                <div class="expandable-card--profile-image">
+                  M
+                </div>
+              </div>
+              <div class="expandable-card--right-col col">
+                <div class="expandable-card--title">
+                  Márcia
+                </div>
+                <div class="expandable-card--sub-title">
+                  <p>Brasil</p>
+                  <p>"A chalé é localizada em meio a natureza. O ambiente aconchegante. Um cantinho todo especial para
+                    descansar. Fomos bem acolhidos. O café muito bem servido. Amei o experiência."</p>
+                </div>
+              </div>
+            </div>
+            <div expandedContent>
+              <div class="mock-content"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="profile-2" class="expandable-card">
+          <div cardContent>
+            <div collapsedContent>
+              <div class="expandable-card--left-col col">
+                <div class="expandable-card--profile-image">
+                  V
+                </div>
+              </div>
+              <div class="expandable-card--right-col col">
+                <div class="expandable-card--title">
+                  Vitor
+                </div>
+                <div class="expandable-card--sub-title">
+                  <p>Brasil</p>
+                  <p>"Ótimo atendimento dos anfitriões. Lugar lindo, charmoso e muito aconchegante. Ótimo lugar para
+                    descansar e repor as energias"</p>
+                </div>
+              </div>
+            </div>
+            <div expandedContent>
+              <div class="mock-content"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="profile-3" class="expandable-card">
+          <div cardContent>
+            <div collapsedContent>
+              <div class="expandable-card--left-col col">
+                <div class="expandable-card--profile-image">
+                  F
+                </div>
+              </div>
+              <div class="expandable-card--right-col col">
+                <div class="expandable-card--title">
+                  Felipe
+                </div>
+                <div class="expandable-card--sub-title">
+                  <p>Brasil</p>
+                  <p>"O cuidado que os anfitriões tratam os hóspedes e o local é exemplar. Desde o momento da reserva,
+                    sempre muito atenciosos e solícitos."</p>
+                </div>
+              </div>
+            </div>
+            <div expandedContent>
+              <div class="mock-content"></div>
+            </div>
+          </div>
+        </div>
       </div>
-      <ul>
-        07/01/2024<span class="subtitle">Queridos anfitrões,
-          A nossa estadia no chalé foi maravilhaso. Tudo de muito bom gosto, pensado e preparado para o bem estar dos
-          hóspedes.
-          Adoramos tudo, ôfuro, café maravilhoso e tudo o mais.
-        </span>
-      </ul>
-    </li>
-    <li class="card-large card-dark card-wide" id="serv-groom">
-      <div class="card-image"><img src="../../../assets/feedback1.png">
+
+      <div class="card-column">
+        <div id="profile-4" class="expandable-card">
+          <div cardContent>
+            <div collapsedContent>
+              <div class="expandable-card--left-col col">
+                <div class="expandable-card--profile-image">
+                  A
+                </div>
+              </div>
+              <div class="expandable-card--right-col col">
+                <div class="expandable-card--title">
+                  Alex
+                </div>
+                <div class="expandable-card--sub-title">
+                  <p>Brasil</p>
+                  <p>"Da Anfitriã ela é perfeita, se preocupa com cada detalhe, o café da manhã é magnífico, a
+                    organização e limpeza é impecável."</p>
+                </div>
+              </div>
+            </div>
+            <div expandedContent>
+              <div class="mock-content"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="profile-5" class="expandable-card">
+          <div cardContent>
+            <div collapsedContent>
+              <div class="expandable-card--left-col col">
+                <div class="expandable-card--profile-image">
+                  A
+                </div>
+              </div>
+              <div class="expandable-card--right-col col">
+                <div class="expandable-card--title">
+                  Abel
+                </div>
+                <div class="expandable-card--sub-title">
+                  <p>Brasil</p>
+                  <p>"O Chalé Fuji é muito lindo. Tudo bem feito, pensado nos detalhes. Café da manhã excelente. O
+                    atendimento da Célia foi muito bom, deu dicas da região e é muito gentil. Lugar cercado de natureza
+                    e pássaros, bem tranquilo."</p>
+                </div>
+              </div>
+            </div>
+            <div expandedContent>
+              <div class="mock-content"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="profile-6" class="expandable-card">
+          <div cardContent>
+            <div collapsedContent>
+              <div class="expandable-card--left-col col">
+                <div class="expandable-card--profile-image">
+                  F
+                </div>
+              </div>
+              <div class="expandable-card--right-col col">
+                <div class="expandable-card--title">
+                  Fatima
+                </div>
+                <div class="expandable-card--sub-title">
+                  <p>Japão</p>
+                  <p>"Gostamos do atendimento da senhora Célia. A decoração temática oriental é maravilhosa e o café é
+                    espetacular e delicioso. Valeu muito a pena. Já quero voltar em..."</p>
+                </div>
+              </div>
+            </div>
+            <div expandedContent>
+              <div class="mock-content"></div>
+            </div>
+          </div>
+        </div>
       </div>
-      <ul>
-        15/01/2024<span class="subtitle">Viemos comemorar o nosso 24 aniversário de casamento e foram dias
-          maravilhosos!
-          Tudo muito organizado e caprichado, café da manhã delicioso e variado.
-        </span>
-      </ul>
-    </li>
-    <li class="card-large card-dark card-wide" id="serv-groom">
-      <div class="card-image"><img src="../../../assets/feedback1.png">
-      </div>
-      <ul>
-        22/01/2024<span class="subtitle">Experiêcnia maravilhosa, o chelé reflete um designer cuidadoso sobre a cultura
-          Japonesa. Uma limpeza impecavél e um café da melhor qualidade e delicioso.</span>
-      </ul>
-    </li>
-  </ul>
+    </div>
+  </div>
 </section>
+
+
 
 <app-coffee></app-coffee>
 

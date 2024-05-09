@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, Input, OnInit, ViewChild } from '@angular/core';
+
+
 
 
 declare var google: any; // Adicione esta linha
@@ -10,6 +12,15 @@ declare var google: any; // Adicione esta linha
 export class HomeComponent implements OnInit {
   currentIndex = 0;
 
+
+  @Input()
+  header!: string;
+  expanded = false;
+
+  @HostListener('click')
+  onClick() {
+    this.expanded = !this.expanded;
+  }
 
   constructor() { }
 
@@ -70,4 +81,5 @@ export class HomeComponent implements OnInit {
   goToSlide(slideIndex: number): void {
     this.currentSlide = slideIndex;
   }
+
 }

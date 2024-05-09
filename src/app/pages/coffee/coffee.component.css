@@ -301,8 +301,13 @@ a:active {
   }
 
   #content {
-    grid-template-columns: repeat(1, 1fr);
-    padding: 40px 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Mostrar dois cards por linha */
+    gap: 20px; /* Espaçamento entre os cards */
+    padding: 20px; /* Espaçamento interno */
+  }
+  .card {
+    width: 100%; /* Ocupar toda a largura da coluna */
   }
 
   footer {

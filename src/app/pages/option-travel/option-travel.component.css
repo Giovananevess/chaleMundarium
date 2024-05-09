@@ -201,3 +201,29 @@ h1 {
     margin: 0 0 2rem 0;
   }
 }
+
+@media screen and (max-width: 550px) {
+  .cols {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Mostrar dois cards por linha */
+    gap: 20px; /* Espaçamento entre os cards */
+  }
+
+  .col {
+    width: calc(50% - 20px); /* Ajustar a largura dos cards para 50% da largura da tela, com espaço de 20px entre eles */
+  }
+
+  .card {
+    height: 200px; /* Reduzir a altura dos cards */
+  }
+
+  .card .inner {
+    padding: 20px; /* Adicionar espaçamento interno aos cards */
+  }
+
+  .card .inner p,
+  .card .inner span {
+    font-size: 14px; /* Reduzir o tamanho do texto */
+  }
+}
+
