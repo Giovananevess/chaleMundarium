@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-coffee',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./coffee.component.css']
 })
 export class CoffeeComponent {
+
+  constructor(private router: Router) { }
+
+  goToAboutUs() {
+    this.router.navigate(['/aboutUs']);
+  }
 
 }

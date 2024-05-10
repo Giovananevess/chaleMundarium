@@ -207,8 +207,11 @@ h1 {
   }
 
   .col {
+    margin-left: 42px;
+    align-items: center !important;
+    justify-content: center;
     width: 80%; /* Ajustar a largura dos cards para 100% da largura da tela */
-    margin-top: 20px; /* Adicionar espaço abaixo de cada card */
+    margin-top: 15px; /* Adicionar espaço abaixo de cada card */
   }
   .card {
     height: 150px; /* Reduzir a altura dos cards */

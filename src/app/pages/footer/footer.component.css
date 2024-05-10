@@ -98,6 +98,19 @@
   .site-footer .social-icons {
     text-align: center
   }
+  .footer-links-conter, li {
+    align-items: center;
+    justify-content: center;
+    text-align: center;  }
+
+  .img_log_footer {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do dispositivo móvel */
+    height: auto; /* Permite que a altura da imagem seja ajustada automaticamente */
+    display: block; /* Remove qualquer espaçamento indesejado ao redor da imagem */
+    margin: 0 auto 15px; /* Centraliza a imagem e adiciona um espaçamento abaixo dela */
+  }
+
+
 }
 
 .social-icons {
