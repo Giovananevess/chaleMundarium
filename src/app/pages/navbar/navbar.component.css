@@ -95,9 +95,9 @@ header.scroll {
 
 .content h1 {
   font-size: 6rem;
-  font-weight: 500;
-  -webkit-text-stroke: 3px rgb(255, 255, 255);
-  color: transparent;
+  font-weight: 800;
+  color: #ffffff;
+  text-shadow: 3px 3px 4px rgba(0, 0, 0.5, 0.10);
   transition: all 0.5s ease;
 }
 
