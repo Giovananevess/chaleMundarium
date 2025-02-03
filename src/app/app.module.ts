@@ -13,6 +13,7 @@ import { register } from 'swiper/element/bundle';
 import { FeedbackComponent } from './pages/feedback/feedback.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { HeaderComponent } from './pages/header/header.component';
+import { DatailsChaleCanadenseComponent } from './pages/datails-chale-canadense/datails-chale-canadense.component';
 register();
 
 @NgModule({
@@ -28,6 +29,7 @@ register();
     FeedbackComponent,
     AboutUsComponent,
     HeaderComponent,
+    DatailsChaleCanadenseComponent,
   ],
   imports: [
     BrowserModule,

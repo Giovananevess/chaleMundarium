@@ -1,79 +1,137 @@
-
-/* CARD */
+/* Estilização Geral */
 section {
   display: flex;
-  justify-content: center; /* Centraliza os itens horizontalmente */
-  align-items: center; /* Centraliza os itens verticalmente */
-  height: 100vh; /* Define a altura da seção para ocupar toda a altura da tela */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
+/* CARD */
 .card {
   width: min(100%, 500px);
-  background: rgba(255, 255, 255);
+  background: white;
   border-radius: 16px;
   font-family: "Poppins", sans-serif;
   z-index: 5;
-  margin: 0 20px; /* Adiciona margem entre os cards */
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
 }
 
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Imagem do Card */
 .card > img {
   display: block;
   width: 100%;
   max-width: 500px;
   aspect-ratio: 4/3;
   object-fit: cover;
-  object-position: 50% 50%;
   border-radius: 16px 16px 0 0;
   filter: contrast(70%);
-  transition: all 0.6s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  transition: filter 0.6s cubic-bezier(0.43, 0.41, 0.22, 0.91);
 }
 
 .card > img:hover {
   filter: contrast(100%);
 }
 
+/* Conteúdo do Card */
 .card-content {
   display: flex;
   flex-direction: column;
-  padding: 20px 15px 20px;
+  align-items: center;
+  padding: 20px 15px;
 }
 
-.overlay-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white; /* Cor do texto */
-  font-size: 20px;
-  background-color: rgba(0, 0, 0, 0.9); /* Cor de fundo do texto com transparência */
-  padding: 10px 20px;
-  border-radius: 5px;
+/* Texto Destacado */
+.highlight {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2b2b2b;
+  text-transform: uppercase;
+  animation: blink 1s infinite alternate;
 }
 
-.card-content > p {
-  margin-bottom: 10px;
-}
-
-.card-content > p:nth-child(1) {
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: #000000;
-}
-
-.card-content > p:nth-child(2) {
-  font-size: 0.8rem;
-  font-weight: 400;
-  color: #ffffff;
-}
-
-@media (max-width: 900px) {
-  section {
-     grid-template-columns: repeat(2, 1fr);
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
+/* Badge Novo */
+.badge-new {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #73ff22;
+  color: white;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Efeito Glow para chamar atenção */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(170, 255, 34, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(141, 255, 34, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(41, 255, 34, 0.4);
+  }
+}
+
+.card.new-card {
+  animation: glow 1.5s infinite alternate;
+  border: 2px solid #bae939;
+}
+/* Badge Novo com Imagem */
+.badge-new-img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 60px; /* Ajuste conforme necessário */
+  height: auto;
+  z-index: 10;
+}
+
+/* Banner de Destaque "Inaugurado!" */
+.ribbon {
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  background: #ff9800;
+  color: white;
+  padding: 5px 15px;
+  font-weight: bold;
+  transform: rotate(-15deg);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 @media (max-width: 600px) {
   section {
@@ -81,32 +139,19 @@ section {
     grid-template-columns: 1fr;
     gap: 20px;
   }
+
   .card {
-    width: calc(100% - 40px); /* Reduz a largura do card */
-    max-width: none; /* Remove a largura máxima definida anteriormente */
-    aspect-ratio: 1; /* Define uma proporção quadrada para o card */
+    width: calc(100% - 40px);
+    max-width: none;
   }
 
-  .card > img {
-    border-radius: 16px; /* Adiciona borda arredondada ao card */
+  .badge-new {
+    font-size: 12px;
+    padding: 4px 8px;
   }
 
-  .card-content {
-    padding: 10px 15px; /* Reduz o padding do conteúdo do card */
-  }
-
-  .overlay-text {
-    font-size: 16px; /* Reduz o tamanho da fonte do texto sobreposto */
-    padding: 8px 12px; /* Reduz o padding do texto sobreposto */
-    border-radius: 4px; /* Adiciona borda arredondada ao texto sobreposto */
-  }
-}
-
-/* Estilos para telas maiores */
-@media (min-width: 601px) {
-  section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+  .cta-button {
+    font-size: 14px;
+    padding: 8px 12px;
   }
 }

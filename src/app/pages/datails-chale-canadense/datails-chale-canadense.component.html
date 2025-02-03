@@ -1,0 +1,94 @@
+<app-header></app-header>
+<div class="header">
+  <div class="inner-header flex">
+  </div>
+  <div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+      </g>
+    </svg>
+  </div>
+</div>
+
+<section class="hero">
+  <h1>Chalé Canadense</h1>
+  <p>Passar uma noite no Chalé Canadense é mergulhar em uma experiência única!</p>
+  <p>Experimente o aconchego e a sofisticação do Chalé Canadense!</p>
+  <p>Inspirado nas cabanas de madeira do Canadá, nosso chalé oferece uma experiência única de conforto e contato com a
+    natureza.
+    Localizado em meio às montanhas, o ambiente é ideal para quem busca tranquilidade e bem-estar.</p>
+  <div class="btn-group">
+    <a href="https://wa.me/5511963897345?text=Olá,%20Eu%20gostaria%20de%20fazer%20uma%20reserva!"><button
+        class="btn-filled-dark">Reserva pelo Whatsapp
+      </button></a>
+
+    <a href="https://www.booking.com/hotel/br/chales-mundarium.pt-br.html">
+      <button class="btn-outline-dark btn-hover-color">Booking </button></a>
+  </div>
+
+  <section id="masunery-gallery">
+    <div class="container-galerry">
+      <div class="row">
+        <div style="text-align: justify;" class="col-md-12">
+          <div class="galeria-fotos-title-section-area54">
+            <h2 class="category-main-title">A IMERSÃO DE CULTURA</h2>
+            <svg width="80" height="4" viewBox="0 0 80 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line y1="2" x2="80" y2="2" stroke="#926B29" stroke-width="4"></line>
+            </svg>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="row">
+            <div *ngFor="let image of images" class="col-md-3">
+              <div class="gallery-img1">
+                <img [src]="image" alt="1">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <h2>O que nós oferecemos</h2>
+  <div class="list-check">
+    <div class="column">
+      <ul>
+        <li><i class='bx bxs-buildings' size="lg"></i>12km do centro</li>
+        <li><i class='bx bx-wind'></i>Rede suspensa ao ar livre</li>
+        <li><i class='bx bxs-florist'></i>Jardim</li>
+        <li><i class='bx bxs-coffee'></i>Café da manhã no chalé</li>
+        <li><i class='bx bxs-spa'></i>Comodidade</li>
+        <li><i class='bx bx-award'></i>Cama queen</li>
+        <li><i class='bx bx-award'></i>Microondas</li>
+        <li><i class='bx bxs-fridge'></i>Frigobar</li>
+        <li><i class='bx bx-award'></i>Sofá futon</li>
+        <li><i class='bx bx-rss'></i>Wifi</li>
+        <li><i class='bx bxs-home'></i>Decoração temática</li>
+      </ul>
+    </div>
+    <div class="column">
+      <ul>
+
+        <li><i class='bx bxs-car-garage'></i>Estacionamento</li>
+        <li><i class='bx bx-hotel'></i>Roupa de cama e banho</li>
+        <li><i class='bx bxs-buildings'></i>Vários atrativos turísticos na região</li>
+        <li><i class='bx bx-volume-mute'></i>Lugar tranquilo</li>
+        <li><i class='bx bx-award'></i>Calefator</li>
+        <li><i class='bx bx-slideshow'></i>SmartTV 55 polegadas</li>
+        <li><i class='bx bxs-bath'></i>Ôfuro com hidromassagem e cromoterapia</li>
+        <li><i class='bx bx-award'></i>Secador de cabelo</li>
+        <li><i class='bx bxs-coffee-bean'></i>Cafeteira elétrica</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<div class="hero">
+  <app-footer></app-footer>
